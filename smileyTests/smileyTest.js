@@ -2,8 +2,8 @@
 // Will that make it easier to export to a parent class with array & a count function included?
 
 function SmileTest(){
-	this.passedCount = 0
-	this.failedCount = 0
+	this.passedCount = 0;
+	this.failedCount = 0;
 }
 
 SmileTest.prototype.isEqualTo = function(expect, actual){
@@ -14,7 +14,7 @@ SmileTest.prototype.isEqualTo = function(expect, actual){
 	}
 	else {
 		this.failedCount ++;
-		console.log('Test failed.')
+		console.log('Test failed.');
 	}
 };
 
