@@ -22,7 +22,10 @@ test = new SmileTest();
 test2 = new SmileTest();
 
 test.isEqualTo(5,5);
-test2.isEqualTo(4,5);
+
+
+test2.isEqualTo(document.body.innerText, 'Hello Smiley world!');
 
 console.log(test.passedCount);
 console.log(test2.failedCount);
+console.log(test2.result);
