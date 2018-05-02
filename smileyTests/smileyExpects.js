@@ -4,23 +4,25 @@ function expects(x) {
 	return {
 		toEqual: function(y) {
 			if (x === y) {
-				console.log('Passed!')
+				console.log('Passed!'); //changed from console.log to return. We will console log at smileyIt.js
 			}
 			else {
-				console.log('Failed')
+				console.log('Failed');
 			}
 		},
 
 		toBeLength: function(length) {
 			if (x.length === length) {
-				console.log('Test Passed!')
+				return 'Test Passed!';
 			}
 			else {
-				console.log('Failed')
+				return'Failed';
 			}
 		}
+
 	};
-};
+}
+
 
 // expects(5).toEqual(5)
 // expects(4).toEqual("moo")
