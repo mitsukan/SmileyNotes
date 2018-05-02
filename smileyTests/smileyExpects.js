@@ -4,10 +4,10 @@ function expects(x) {
 	return {
 		toEqual: function(y) {
 			if (x === y) {
-				return'Passed!'; //changed from console.log to return. We will console log at smileyIt.js
+				console.log('Passed!'); //changed from console.log to return. We will console log at smileyIt.js
 			}
 			else {
-				return 'Failed';
+				console.log('Failed');
 			}
 		},
 

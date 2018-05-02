@@ -1,10 +1,4 @@
-function it(string, callback) {
-	console.log(callback());
+function it(string, callbackExpects) {
+	console.log("it " + string + ":");
+	callbackExpects();
 }
-
-
-
-//What we kinda want the syntax to look like:
-// it("does this thing", function(){
-// 	expect().toEqual();
-// });
