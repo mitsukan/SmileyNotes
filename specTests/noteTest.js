@@ -12,6 +12,19 @@
       expects(testNote.string).toEqual("Hello!");
     });
 
+    describe("Knows if the content is 20 characters or less", function() {
+
+      it("False if short", function() {
+        var testNote = new Note("Hello!");
+        expects(testNote.isLengthy).toEqual(false);
+      });
+
+      it("True if long", function() {
+        var testNote = new Note("This is definitely longer than the 20 character limit that we are trying to test");
+        expects(testNote.isLengthy).toEqual(true);
+      });
+
+    });
 
   });
 
