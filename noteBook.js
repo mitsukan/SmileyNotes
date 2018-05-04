@@ -1,3 +1,5 @@
-console.log("noteBook.js loaded");
 
-function NoteBook(){};
+
+function NoteBook(){
+  this.storage = [];
+};

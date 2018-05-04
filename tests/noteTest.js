@@ -24,6 +24,13 @@
       expects(typeof NoteBook).toEqual("function");
     });
 
+    it("Has an array for storage", function() {
+      testNoteBook1 = new NoteBook();
+      expects(testNoteBook1.storage.length).toEqual(0);
+    });
+
+
+
   });
 
 
