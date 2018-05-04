@@ -1,12 +1,34 @@
-
 // describe: Note
 
 //cannot be created without string passed
 
 // it: has at least 1 character in note
 
-// describe: new note
-// it: creates a new note(string)
+
+  describe("Note", function() {
+
+    it("Has a note constructor", function() {
+      expects(typeof Note).toEqual("function");
+    });
+
+    it("Can store a string", function(){
+      testNote1 = new Note("Hello!");
+      expects(testNote1.string).toEqual("Hello!");
+    });
+
+  });
+
+  describe("Notebook", function() {
+
+    it("Has a noteBook constructor", function(){
+      expects(typeof NoteBook).toEqual("function");
+    });
+
+  });
+
+
+
+
 
 // describe: new noteBook
 // it: creates a new noteBook(array)

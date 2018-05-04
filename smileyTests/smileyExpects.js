@@ -4,7 +4,7 @@ function expects(x) {
 	return {
 		toEqual: function(y) {
 			if (x === y) {
-				console.log('Passed!'); //changed from console.log to return. We will console log at smileyIt.js
+				console.log('%c Passed!', 'color: #bada55'); //changed from console.log to return. We will console log at smileyIt.js
 			}
 			else {
 				console.log('Failed');
@@ -28,5 +28,3 @@ function expects(x) {
 // expects(4).toEqual("moo")
 //
 // expects("ding").toBeLength(4);
-
-
