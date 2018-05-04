@@ -1,8 +1,10 @@
 console.log("note.js loaded");
 
-  function Note(string){
+  function Note(string) {
+    
     this.string = string
-    if(string.length <= 20){
+
+    if(string.length <= 20) {
       this.isLengthy = false;
     }
     else{
