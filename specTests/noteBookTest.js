@@ -10,7 +10,6 @@
       expects(testNoteBook.storage.length).toEqual(0);
     });
 
-
     it("Can store a Note", function() {
       var testNoteBook = new NoteBook();
       var testNote = new Note("Hello!");
